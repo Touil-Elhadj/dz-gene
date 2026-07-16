@@ -1,0 +1,16 @@
+{
+  "dir": "rtl",
+  "lang_name": "العربية",
+  "app_title": "DZ-Gene",
+  "app_subtitle": "من المورثة إلى الوظيفة",
+  "node_gene": "المورثة",
+  "node_gene_sub": "التتابعات",
+  "node_protein": "البروتين",
+  "node_protein_sub": "بنية ثلاثية الأبعاد",
+  "node_function": "الوظيفة",
+  "node_function_sub": "إنزيم / تثبيط",
+  "arrow_translate": "ترجمة",
+  "arrow_fold": "طيّ",
+  "coming_soon": "قريبًا",
+  "enter": "دخول"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "DZ-Gene",
+  "version": "0.1.0",
+  "identifier": "dz.education.dzgene",
+  "build": {
+    "frontendDist": "../web"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "DZ-Gene",
+        "width": 1100,
+        "height": 720,
+        "minWidth": 800,
+        "minHeight": 560,
+        "resizable": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Education",
+    "shortDescription": "Génétique moléculaire pour lycéens",
+    "longDescription": "DZ-Gene : outil éducatif de génétique moléculaire pour les élèves du secondaire (programme algérien). Gène → Protéine → Fonction."
+  }
+}

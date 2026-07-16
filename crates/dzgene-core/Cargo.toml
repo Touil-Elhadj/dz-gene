@@ -1,0 +1,18 @@
+[package]
+name = "dzgene-core"
+description = "Moteur scientifique pur de DZ-Gene : génétique moléculaire, format .edi, distances évolutives. Sans interface, sans I/O réseau."
+keywords = ["bioinformatics", "genetics", "education", "teaching"]
+categories = ["science"]
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }

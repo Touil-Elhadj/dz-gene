@@ -1,0 +1,16 @@
+{
+  "dir": "ltr",
+  "lang_name": "Français",
+  "app_title": "DZ-Gene",
+  "app_subtitle": "Du gène à la fonction",
+  "node_gene": "Le gène",
+  "node_gene_sub": "Séquences",
+  "node_protein": "La protéine",
+  "node_protein_sub": "Structure 3D",
+  "node_function": "La fonction",
+  "node_function_sub": "Enzyme / inhibition",
+  "arrow_translate": "Traduction",
+  "arrow_fold": "Repliement",
+  "coming_soon": "Bientôt",
+  "enter": "Entrer"
+}

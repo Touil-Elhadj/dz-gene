@@ -1,0 +1,113 @@
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --border: #e0e0dc;
+  --gene: #185fa5;
+  --gene-bg: #e6f1fb;
+  --protein: #0f6e56;
+  --protein-bg: #e1f5ee;
+  --function: #993c1d;
+  --function-bg: #faece7;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, "Segoe UI", "Noto Sans Arabic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand { display: flex; flex-direction: column; }
+.brand-title { font-size: 20px; font-weight: 600; }
+.brand-sub { font-size: 13px; color: var(--text-muted); }
+
+.lang-switch { display: flex; gap: 6px; }
+.lang-btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text);
+}
+.lang-btn:hover { background: var(--bg); }
+.lang-btn.active { border-color: var(--text); font-weight: 600; }
+
+.concept-map {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px;
+  flex-wrap: wrap;
+}
+
+.node {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 190px;
+  padding: 28px 18px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+  font-family: inherit;
+}
+.node:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.node:active { transform: translateY(0); }
+
+.node-icon { font-size: 40px; line-height: 1; }
+.node-title { font-size: 17px; font-weight: 600; }
+.node-sub { font-size: 13px; color: var(--text-muted); }
+
+.node-gene { border-color: var(--gene); background: var(--gene-bg); }
+.node-gene .node-title { color: var(--gene); }
+.node-protein { border-color: var(--protein); background: var(--protein-bg); }
+.node-protein .node-title { color: var(--protein); }
+.node-function { border-color: var(--function); background: var(--function-bg); }
+.node-function .node-title { color: var(--function); }
+
+.badge {
+  position: absolute;
+  top: 8px;
+  inset-inline-end: 8px;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.06);
+  color: var(--text-muted);
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-muted);
+  min-width: 60px;
+}
+.arrow-line { font-size: 26px; }
+.arrow-label { font-size: 12px; }
+
+html[dir="rtl"] .arrow-line { transform: scaleX(-1); }

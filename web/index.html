@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DZ-Gene</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-title" data-i18n="app_title">DZ-Gene</span>
+      <span class="brand-sub" data-i18n="app_subtitle"></span>
+    </div>
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="ar">العربية</button>
+      <button class="lang-btn" data-lang="fr">Français</button>
+    </div>
+  </header>
+
+  <main class="concept-map">
+    <button class="node node-gene" data-node="gene">
+      <span class="node-icon">🧬</span>
+      <span class="node-title" data-i18n="node_gene"></span>
+      <span class="node-sub" data-i18n="node_gene_sub"></span>
+    </button>
+
+    <div class="arrow" data-arrow="translate">
+      <span class="arrow-line">→</span>
+      <span class="arrow-label" data-i18n="arrow_translate"></span>
+    </div>
+
+    <button class="node node-protein" data-node="protein">
+      <span class="badge" data-i18n="coming_soon"></span>
+      <span class="node-icon">⚛️</span>
+      <span class="node-title" data-i18n="node_protein"></span>
+      <span class="node-sub" data-i18n="node_protein_sub"></span>
+    </button>
+
+    <div class="arrow" data-arrow="fold">
+      <span class="arrow-line">→</span>
+      <span class="arrow-label" data-i18n="arrow_fold"></span>
+    </div>
+
+    <button class="node node-function" data-node="function">
+      <span class="badge" data-i18n="coming_soon"></span>
+      <span class="node-icon">🧪</span>
+      <span class="node-title" data-i18n="node_function"></span>
+      <span class="node-sub" data-i18n="node_function_sub"></span>
+    </button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

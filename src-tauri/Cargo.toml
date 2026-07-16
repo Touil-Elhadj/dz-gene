@@ -1,0 +1,17 @@
+[package]
+name = "dzgene-app"
+description = "DZ-Gene — génétique moléculaire pour la 3AS (application de bureau)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+dzgene-core = { path = "../crates/dzgene-core" }
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde = { workspace = true }
+serde_json = { workspace = true }
