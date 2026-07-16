@@ -50,6 +50,34 @@
     </button>
   </main>
 
+
+  <section class="screen screen-gene" hidden>
+    <div class="screen-head">
+      <button class="back-btn" data-action="back">
+        <span class="back-arrow">←</span>
+        <span data-i18n="back">رجوع</span>
+      </button>
+      <button class="open-btn" data-action="open-edi">
+        <span data-i18n="open_local">فتح تتابعات محلية</span>
+      </button>
+      <button class="import-btn" data-action="import-global">
+        <span class="badge-inline" data-i18n="coming_soon">قريبًا</span>
+        <span data-i18n="import_global">استيراد من بنوك عالمية</span>
+      </button>
+      <span class="file-name" id="fileName"></span>
+    </div>
+
+    <div class="gene-body">
+      <aside class="seq-list" id="seqList">
+        <p class="empty-hint" data-i18n="no_file">لم يُفتح أي ملف بعد</p>
+      </aside>
+
+      <div class="seq-detail" id="seqDetail">
+        <p class="empty-hint" data-i18n="select_seq">اختر تتابعًا لعرضه</p>
+      </div>
+    </div>
+  </section>
+
   <script src="app.js"></script>
 </body>
 </html>

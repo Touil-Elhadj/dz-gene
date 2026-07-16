@@ -12,5 +12,14 @@
   "arrow_translate": "ترجمة",
   "arrow_fold": "طيّ",
   "coming_soon": "قريبًا",
-  "enter": "دخول"
+  "enter": "دخول",
+  "back": "رجوع",
+  "open_file": "فتح ملف .edi",
+  "no_file": "لم يُفتح أي ملف بعد",
+  "select_seq": "اختر تتابعًا لعرضه",
+  "translate_btn": "ترجمة",
+  "length": "الطول",
+  "type_label": "النوع",
+  "open_local": "فتح تتابعات محلية",
+  "import_global": "استيراد من بنوك عالمية"
 }

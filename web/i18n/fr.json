@@ -12,5 +12,14 @@
   "arrow_translate": "Traduction",
   "arrow_fold": "Repliement",
   "coming_soon": "Bientôt",
-  "enter": "Entrer"
+  "enter": "Entrer",
+  "back": "Retour",
+  "open_file": "Ouvrir .edi",
+  "no_file": "Aucun fichier ouvert",
+  "select_seq": "Choisir une séquence",
+  "translate_btn": "Traduire",
+  "length": "Longueur",
+  "type_label": "Type",
+  "open_local": "Ouvrir des séquences locales",
+  "import_global": "Importer des banques mondiales"
 }
